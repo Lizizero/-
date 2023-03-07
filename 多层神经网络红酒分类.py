@@ -3,8 +3,10 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
+from sklearn.datasets import load_wine
 
 # 读取数据
+# data = load_wine()
 data = pd.read_csv('wine.csv')
 
 # 特征缩放
